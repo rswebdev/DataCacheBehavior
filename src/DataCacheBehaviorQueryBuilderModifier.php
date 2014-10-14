@@ -1,5 +1,5 @@
 <?php
-namespace Propel\Generator\Behavior\DataCacheBehavior;
+namespace RSWebDev\Propel\Generator\Behavior\DataCacheBehavior;
 /**
  * Propel Data Cache Behavior
  *

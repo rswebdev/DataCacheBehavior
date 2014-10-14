@@ -1,6 +1,6 @@
 {
   "name": "rswebdev/data-cache-behavior",
-  "description": "Adds a DAta Cache to Propel",
+  "description": "Adds a Data Cache to Propel",
   "minimum-stability": "stable",
   "license": "proprietary",
   "type": "propel-behavior",
@@ -13,9 +13,9 @@
   ],
   "autoload": {
     "psr-0": {
-      "Propel\\Generator\\Behavior\\DataCacheBehavior" : "/src/DataCacheBehavior.php",
-      "Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorObjectBuilderModifier" : "/src/DataCacheBehaviorObjectBuilderModifier.php",
-      "Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorQueryBuilderModifier" : "/src/DataCacheBehaviorQueryBuilderModifier.php"
+      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior" : "/src/DataCacheBehavior.php",
+      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorObjectBuilderModifier" : "/src/DataCacheBehaviorObjectBuilderModifier.php",
+      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorQueryBuilderModifier" : "/src/DataCacheBehaviorQueryBuilderModifier.php"
     }
   },
   "require": {
@@ -25,6 +25,6 @@
   },
   "extra": {
     "name": "data_cache",
-    "class": "\\Propel\\Generator\\Behavior\\DataCacheBehavior"
+    "class": "\\RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior"
   }
 }

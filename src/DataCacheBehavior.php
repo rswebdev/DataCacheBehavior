@@ -1,8 +1,8 @@
 <?php
-namespace Propel\Generator\Behavior;
+namespace RSWebDev\Propel\Generator\Behavior;
 
-use Propel\Generator\Behavior\DataCacheBehavior\DataCacheBehaviorObjectBuilderModifier;
-use Propel\Generator\Behavior\DataCacheBehavior\DataCacheBehaviorQueryBuilderModifier;
+use RSWebDev\Propel\Generator\Behavior\DataCacheBehavior\DataCacheBehaviorObjectBuilderModifier;
+use RSWebDev\Propel\Generator\Behavior\DataCacheBehavior\DataCacheBehaviorQueryBuilderModifier;
 use Propel\Generator\Model\Behavior;
 
 /**

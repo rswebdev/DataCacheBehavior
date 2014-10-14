@@ -1,7 +1,7 @@
 <?php
-namespace Propel\Generator\Behavior\DataCacheBehavior;
+namespace RSWebDev\Propel\Generator\Behavior\DataCacheBehavior;
 
-use Propel\Generator\Behavior\DataCacheBehavior;
+use RSWebDev\Propel\Generator\Behavior\DataCacheBehavior;
 use Propel\Generator\Util\PhpParser;
 
 class DataCacheBehaviorObjectBuilderModifier
