@@ -13,7 +13,9 @@
   ],
   "autoload": {
     "psr-0": {
-      "Propel\\Generator\\Behavior\\DataCacheBehavior" : "src/"
+      "Propel\\Generator\\Behavior\\DataCacheBehavior" : "/src/DataCacheBehavior.php",
+      "Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorObjectBuilderModifier" : "/src/DataCacheBehaviorObjectBuilderModifier.php",
+      "Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorQueryBuilderModifier" : "/src/DataCacheBehaviorQueryBuilderModifier.php"
     }
   },
   "require": {
