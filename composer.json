@@ -13,9 +13,7 @@
   ],
   "autoload": {
     "psr-0": {
-      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior" : "/src/DataCacheBehavior.php",
-      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorObjectBuilderModifier" : "/src/DataCacheBehaviorObjectBuilderModifier.php",
-      "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorQueryBuilderModifier" : "/src/DataCacheBehaviorQueryBuilderModifier.php"
+      "RSWebDev\\" : "/src"
     }
   },
   "require": {
