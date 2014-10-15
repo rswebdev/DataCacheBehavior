@@ -12,11 +12,9 @@
     }
   ],
   "autoload": {
-    "psr-0": {
-        "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior" : "/src/Propel/Generator/Behavior/DataCacheBehavior.php",
-        "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorObjectBuilderModifier" : "/src/Propel/Generator/Behavior/DataCacheBehavior/DataCacheBehaviorObjectBuilderModifier.php",
-        "RSWebDev\\Propel\\Generator\\Behavior\\DataCacheBehavior\\DataCacheBehaviorQueryBuilderModifier" : "/src/Propel/Generator/Behavior/DataCacheBehavior/DataCacheBehaviorQueryBuilderModifier.php"
-    }
+    "classmap": [
+        "/src"
+    ]
   },
   "require": {
     "php": ">= 5.3",
