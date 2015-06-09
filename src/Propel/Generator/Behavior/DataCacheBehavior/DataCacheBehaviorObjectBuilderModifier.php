@@ -20,7 +20,7 @@ class DataCacheBehaviorObjectBuilderModifier
     protected function setBuilder($builder)
     {
         $this->builder         = $builder;
-        $this->tableClassName = "\\Map{$builder->getObjectClassName(true)}TableMap";
+        $this->tableClassName = "{$builder->getObjectClassName(true)}TableMap";
         $this->objectClassName = $builder->getObjectClassName(true);
         $this->queryClassName  = $builder->getQueryClassName(true);
     }
