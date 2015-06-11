@@ -56,7 +56,8 @@ class DataCacheBehaviorObjectBuilderModifier
         $script .= "
 public static function purgeCache()
 {
-    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->clearByNamespace({$this->tableClassName}::TABLE_NAME);
+    \$tableMap = self::TABLE_MAP;
+    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->clearByNamespace(\$tableMap::TABLE_NAME);
 }
         ";
     }
@@ -68,17 +69,18 @@ public static function purgeCache()
         $script .= "
 public static function cacheFetch(\$key)
 {
-    \$result = \\Domino\\CacheStore\\Factory::factory('{$backend}')->get({$this->tableClassName}::TABLE_NAME, \$key);
+    \$tableMap = self::TABLE_MAP;
+    \$result = \\Domino\\CacheStore\\Factory::factory('{$backend}')->get(\$tableMap::TABLE_NAME, \$key);
 
     if (\$result !== null) {
         if (\$result instanceof \\ArrayAccess) {
             foreach (\$result as \$element) {
                 if (\$element instanceof {$this->objectClassName}) {
-                    {$this->tableClassName}::addInstanceToPool(\$element);
+                    \$tableMap::addInstanceToPool(\$element);
                 }
             }
         } else if (\$result instanceof {$this->objectClassName}) {
-            {$this->tableClassName}::addInstanceToPool(\$result);
+            \$tableMap::addInstanceToPool(\$result);
         }
     }
 
@@ -94,7 +96,8 @@ public static function cacheFetch(\$key)
         $script .= "
 public static function cacheStore(\$key, \$data, \$lifetime)
 {
-    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->set({$this->tableClassName}::TABLE_NAME, \$key, \$data, \$lifetime);
+    \$tableMap = self::TABLE_MAP;
+    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->set(\$tableMap::TABLE_NAME, \$key, \$data, \$lifetime);
 }
         ";
     }
@@ -106,7 +109,8 @@ public static function cacheStore(\$key, \$data, \$lifetime)
         $script .= "
 public static function cacheDelete(\$key)
 {
-    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->clear({$this->tableClassName}::TABLE_NAME, \$key);
+    \$tableMap = self::TABLE_MAP;
+    return \\Domino\\CacheStore\\Factory::factory('{$backend}')->clear(\$tableMap::TABLE_NAME, \$key);
 }
         ";
     }
