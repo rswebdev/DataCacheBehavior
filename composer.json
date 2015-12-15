@@ -19,7 +19,7 @@
   "require": {
     "php": ">= 5.3",
     "snakano/cache-store": ">=1.4",
-    "propel/propel": "dev-master"
+    "propel/propel": "~2.0@dev"
   },
   "extra": {
     "name": "data_cache",
